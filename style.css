@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Nunito", sans-serif;
+}
+
+.card {
+  width: 50%;
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.5);
+  padding: 12px;
+}
+
+.user {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+}
+.user svg {
+  margin: 11px 11px;
+  cursor: pointer;
+}
+.user h1 {
+  padding-left: 23px;
+}
+
+.user::before {
+  content: "";
+  width: 50px;
+  height: 50px;
+  background-color: rgba(0, 255, 30, 0.3);
+  position: absolute;
+  z-index: -1;
+  border-radius: 50%;
+}
+
+.para {
+  font-size: 18px;
+}
+
+.gray {
+  color: rgba(50, 50, 50, 0.7);
+}
+
+.middle {
+  border: 1px solid rgba(128, 128, 128, 0.5);
+  border-radius: 10px;
+}
+
+.account {
+  display: flex;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.5);
+  padding-inline: 6px;
+  padding-top: 12px;
+  align-items: center;
+}
+
+.account-bottom {
+  padding: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: none;
+}
+
+.account-bottom h5 {
+  padding-top: 8px;
+  padding-left: 12px;
+}
+
+.account img {
+  border-radius: 50%;
+  padding: 6px;
+  cursor: pointer;
+}
+
+.online::after {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  top: 42%;
+  left: 14%;
+  border-radius: 50%;
+  background-color: rgb(97, 255, 128);
+  border: 2px solid white;
+}
+
+.details,
+.left {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 12px;
+}
+
+.check {
+  display: flex;
+  align-items: center;
+}
+
+.bi-person-circle {
+  fill: rgb(0, 132, 0);
+}
+
+.bi-check-circle {
+  fill: rgb(0, 115, 255);
+}
+
+.bottom-text {
+  padding: 12px;
+}
+
+.link {
+  cursor: pointer;
+  color: rgb(0, 115, 255);
+}
+
+@media screen and (max-width: 1000px) {
+  .card {
+    width: 100%;
+    min-width: 50%;
+  }
+}
