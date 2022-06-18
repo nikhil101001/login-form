@@ -82,15 +82,20 @@
   border-radius: 50%;
   padding: 6px;
   cursor: pointer;
+  z-index: 1;
+}
+
+.online {
+  position: relative;
 }
 
 .online::after {
   content: "";
   position: absolute;
-  width: 15px;
-  height: 15px;
-  top: 42%;
-  left: 14%;
+  width: 18px;
+  height: 18px;
+  right: 0;
+  bottom: 0;
   border-radius: 50%;
   background-color: rgb(97, 255, 128);
   border: 2px solid white;
